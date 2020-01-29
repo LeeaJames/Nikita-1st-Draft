@@ -1,0 +1,134 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background-color: #1c1c1c;
+  padding: 0;
+  margin: 0; }
+
+svg {
+  width: 50%; }
+
+nav {
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  nav a {
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    background-color: #a65b5b;
+    transition: 0.5s; }
+    nav a:hover {
+      background-color: #d70000; }
+  nav .logo {
+    width: 210px;
+    text-align: center; }
+    nav .logo a {
+      background-color: transparent; }
+      nav .logo a:hover {
+        background-color: transparent; }
+
+.homeMainContent {
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.loggedInMainContent {
+  background-color: #fff;
+  margin: 0;
+  padding: 1em;
+  min-height: auto; }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 40vw;
+  height: 70vh;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */ }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #1c1c1c;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.flip-card-back input {
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  width: 200px;
+  padding: 2px;
+  margin: 0.5em 0; }
+
+.loggedInMainContent {
+  display: flex; }
+  .loggedInMainContent div {
+    width: 33%;
+    margin: 5px;
+    padding: 1em;
+    background-color: #f2f2f2;
+    border-radius: 10px; }
+  .loggedInMainContent div h2 {
+    font-size: 18px;
+    background-color: #ce3636;
+    padding: 0.5em;
+    border-radius: 10px 10px 0 0;
+    color: #fff; }
+  .loggedInMainContent .quotes .quoteWrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    width: auto; }
+    .loggedInMainContent .quotes .quoteWrapper button {
+      padding: 0.5em;
+      margin: 5px;
+      border-radius: 10px;
+      border: none;
+      background-color: red;
+      color: #fff;
+      width: 200px;
+      transition: ease-in-out 0.8s;
+      cursor: pointer; }
+      .loggedInMainContent .quotes .quoteWrapper button:hover {
+        background-color: blue; }
+
+/*# sourceMappingURL=main.css.map */
